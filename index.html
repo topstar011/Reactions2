@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/7433d3320f.js" crossorigin="anonymous"></script>
+    <title>Emoji reactions</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="feedback">
+            <div class="emoji">
+                <div id="emoji">
+                    <img src="./poor.png" alt="img">
+                    <img src="./bad.png" alt="img">
+                    <img src="./okay.png" alt="img">
+                    <img src="./good.png" alt="img">
+                    <img src="./excellent.png" alt="img">
+                </div>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        var star = document.getElementsByClassName("fa-star");
+        var emoji = document.getElementById("emoji");
+
+        star[0].onclick = function () {
+            star[0].style.color = "yellow";
+            star[1].style.color = "white";
+            star[2].style.color = "white";
+            star[3].style.color = "white";
+            star[4].style.color = "white";
+            emoji.style.transform = "translateX(0px)";
+        }
+        star[1].onclick = function () {
+            star[0].style.color = "yellow";
+            star[1].style.color = "yellow";
+            star[2].style.color = "white";
+            star[3].style.color = "white";
+            star[4].style.color = "white";
+            emoji.style.transform = "translateX(-100px)";
+        }
+        star[2].onclick = function () {
+            star[0].style.color = "yellow";
+            star[1].style.color = "yellow";
+            star[2].style.color = "yellow";
+            star[3].style.color = "white";
+            star[4].style.color = "white";
+            emoji.style.transform = "translateX(-200px)";
+        }
+        star[3].onclick = function () {
+            star[0].style.color = "yellow";
+            star[1].style.color = "yellow";
+            star[2].style.color = "yellow";
+            star[3].style.color = "yellow";
+            star[4].style.color = "white";
+            emoji.style.transform = "translateX(-300px)";
+        }
+        star[4].onclick = function () {
+            star[0].style.color = "yellow";
+            star[1].style.color = "yellow";
+            star[2].style.color = "yellow";
+            star[3].style.color = "yellow";
+            star[4].style.color = "yellow";
+            emoji.style.transform = "translateX(-400px)";
+        }
+    </script>
+</body>
+
+</html>
